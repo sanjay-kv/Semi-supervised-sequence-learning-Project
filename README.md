@@ -168,5 +168,5 @@ control which dataset is processed and how.
 ## Replicated by
 
 * @[sanjay-kv](https://github.com/sanjay-kv), @[mona-piya](https://github.com/mona-piya), @[Mohammed-Rizwan-Amanullah](https://github.com/Mohammed-Rizwan-Amanullah), @[Sabihabit](https://github.com/Sabihabit)
-* Mail to:  <sanjay@recodehive.com>, piyakorn.munegan@students.mq.edu.au, mohammedrizwan.amanullah@students.mq.edu.au
+* Mail to:  [sanjay](sanjay@recodehive.com), [Mona]( piyakorn.munegan@students.mq.edu.au), [Rizwan]( mohammedrizwan.amanullah@students.mq.edu.au)
 * Takeru Miyato, @takerum (Original implementation), Andrew M.Dai adai@google.com (Tensorflow/Models)
