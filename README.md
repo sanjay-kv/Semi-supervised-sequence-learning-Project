@@ -1,5 +1,5 @@
 ![TensorFlow Requirement: 1.x](https://img.shields.io/badge/TensorFlow%20Requirement-1.x-brightgreen)
-![TensorFlow 2 Not Supported](https://img.shields.io/badge/TensorFlow%202%20Not%20Supported-%E2%9C%95-red.svg)![License](https://img.shields.io/github/license/sanjay-kv/Semi-supervised-sequence-learning-Project)![Issues](https://img.shields.io/github/issues/sanjay-kv/Semi-supervised-sequence-learning-Project)![Forks](https://img.shields.io/github/forks/sanjay-kv/Semi-supervised-sequence-learning-Project)
+![TensorFlow 2 Not Supported](https://img.shields.io/badge/TensorFlow%202%20Not%20Supported-%E2%9C%95-red.svg)&nbsp;![License](https://img.shields.io/github/license/sanjay-kv/Semi-supervised-sequence-learning-Project)&nbsp;![Issues](https://img.shields.io/github/issues/sanjay-kv/Semi-supervised-sequence-learning-Project)&nbsp;![Forks](https://img.shields.io/github/forks/sanjay-kv/Semi-supervised-sequence-learning-Project)
 
 # Adversarial Text Classification
 
