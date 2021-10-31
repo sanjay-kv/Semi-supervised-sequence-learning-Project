@@ -1,7 +1,7 @@
 
 
 <h1 align="center">Amazon Scrapping</h1>
-<blockquote align="center">Scrapping the movie review ✏️ using python programming language💻.  </blockquote>
+<blockquote align="center">Scrapping the product lisitng✏️ using python programming language💻.  </blockquote>
 <p align="center">For new data generation <b>Classification part</b> we have writtern a python script to fetch📊, data from the 💻, Amazon website 🌐 and converted into csv files. </p>
 
 
@@ -29,13 +29,13 @@
   
   browser = webdriver.Firefox()
   browser.get('http://selenium.dev/')
-  ```
+ ```
 
 - Selenium Server (optional)
 
  ```python
   java -jar selenium-server-standalone-4.0.0.jar
-  ```
+ ```
 
 ## Installation
 

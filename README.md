@@ -1,5 +1,5 @@
 ![TensorFlow Requirement: 1.x](https://img.shields.io/badge/TensorFlow%20Requirement-1.x-brightgreen)
-![TensorFlow 2 Not Supported](https://img.shields.io/badge/TensorFlow%202%20Not%20Supported-%E2%9C%95-red.svg)
+![TensorFlow 2 Not Supported](https://img.shields.io/badge/TensorFlow%202%20Not%20Supported-%E2%9C%95-red.svg)![License](https://img.shields.io/github/license/sanjay-kv/Semi-supervised-sequence-learning-Project)![Issues](https://img.shields.io/github/issues/sanjay-kv/Semi-supervised-sequence-learning-Project)![Forks](https://img.shields.io/github/forks/sanjay-kv/Semi-supervised-sequence-learning-Project)
 
 # Adversarial Text Classification
 
@@ -93,11 +93,6 @@ $ python pretrain.py \
 
 ### Train classifier
 
-Most flags stay the same, save for the removal of candidate sampling and the
-addition of `pretrained_model_dir`, from which the classifier will load the
-pretrained embedding and LSTM variables, and flags related to adversarial
-training and classification.
-
 ```bash
 $ TRAIN_DIR=/tmp/models/imdb_classify
 $ python train_classifier.py \
@@ -144,18 +139,9 @@ $ python evaluate.py \
 
 Copy the folders to the main directory
 
-```ba
+```bash
 cp /tmp/models/imdb_pretrain/* ~/imdb_pretrain
 ```
-
-## Code Overview
-
-The main entry points are the binaries listed below. Each training binary builds
-a `VatxtModel`, defined in `graphs.py`, which in turn uses graph building blocks
-defined in `inputs.py` (defines input data reading and parsing), `layers.py`
-(defines core model components), and `adversarial_losses.py` (defines
-adversarial training losses). The training loop itself is defined in
-`train_utils.py`.
 
 ### Data Generation
 
@@ -164,6 +150,12 @@ adversarial training losses). The training loop itself is defined in
 
 Command-line flags defined in [`document_generators.py`](https://github.com/tensorflow/models/tree/master/research/adversarial_text/data/document_generators.py)
 control which dataset is processed and how.
+
+### New Data Generation (IMDB, AMAZON)
+
+*   IMDB Web_Scrapping: [`imdb_scrapping.ipynb`](https://github.com/sanjay-kv/Semi-supervised-sequence-learning-Project/blob/main/imdb_review_scrapping/Movie_review_imdb_scrapping.ipynb)
+*   Amazon new data generation: [`amazon_scrapping.py`](https://github.com/sanjay-kv/Semi-supervised-sequence-learning-Project/blob/main/amazon_scrapping/scrapping.py)
+*   SVM on Amazon listing: [`amazon_listing.ipynb`](https://github.com/sanjay-kv/Semi-supervised-sequence-learning-Project/blob/main/NLP_Amazon/Amazon_listing.ipynb)
 
 ## Replicated by
 
