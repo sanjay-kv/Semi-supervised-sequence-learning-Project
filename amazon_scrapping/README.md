@@ -24,7 +24,7 @@
 
 - Load the drivers
 
-- ```python
+ ```python
   from selenium import webdriver
   
   browser = webdriver.Firefox()
@@ -33,7 +33,7 @@
 
 - Selenium Server (optional)
 
-- ```python
+ ```python
   java -jar selenium-server-standalone-4.0.0.jar
   ```
 
