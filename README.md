@@ -5,9 +5,9 @@
 
 Code for [*Adversarial Training Methods for Semi-Supervised Text Classification*](https://arxiv.org/abs/1605.07725) and [*Semi-Supervised Sequence Learning*](https://arxiv.org/abs/1511.01432).
 
-Source Paper:  [*Semi-Supervised Sequence Learning*]( [Semi-Supervised Sequence Learning*](https://arxiv.org/abs/1511.01432).)
+Source Paper:  [*Semi-Supervised Sequence Learning*](https://arxiv.org/abs/1511.01432)
 
-Source Repository:  [*tensorflow/models/research/adversarial_text*]( [https://github.com/tensorflow/models/tree/master/research/adversarial_text)
+Source Repository:  [*tensorflow/models/research/adversarial_text*](https://github.com/tensorflow/models/tree/master/research/adversarial_text)
 
 ## Requirements
 
