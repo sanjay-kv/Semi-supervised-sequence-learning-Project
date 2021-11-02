@@ -113,7 +113,7 @@ Sanjay Kanakkot Viswanathan\inst{3},\break Mohammed Rizwan Amanullah\inst{4}}
   \begin{center}
     \caption{A summary of total data scrapped using Beautifulsoup from IMDB Website.}
     \label{tab:table1}
-    \begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+    \begin{tabular}{|l|c|r|} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
       \hline
       \textbf{Dataset } & \textbf{Labelled} & \textbf{Unlabelled}\\
       
@@ -132,7 +132,6 @@ Sanjay Kanakkot Viswanathan\inst{3},\break Mohammed Rizwan Amanullah\inst{4}}
 \end{frame}
 %------------------------------------------------
 
-
 %------------------------------------------------
 %justification of original work
 %------------------------------------------------
@@ -140,18 +139,15 @@ Sanjay Kanakkot Viswanathan\inst{3},\break Mohammed Rizwan Amanullah\inst{4}}
 \begin{frame}{Amazon New Data Generation}
     \begin{itemize}
         \item Scrapped amazon.in website using selenium.
-        \item We have extracted product listing and product reviews information for ten categories. \break 
-            - After extraction, we are manually tagging the product listing and reviews. \break
-            - For product listing we are manually tagging the company names and for which having positive and negative reviews.
-            
+        \item We have extracted product listing and product information for ten categories. \break 
+            - After extraction, we are manually tagging the product listing. \break
     \end{itemize}
-    
     
           \begin{table}[h!]
   \begin{center}
     \caption{A summary of total data scrapped using Beautifulsoup from IMDB Website.}
     \label{tab:table1}
-    \begin{tabular}{l|c} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+    \begin{tabular}{|l|c|} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
       \hline
       \textbf{Dataset } & \textbf{Scrapped Listings} \\
       
@@ -199,7 +195,7 @@ Sanjay Kanakkot Viswanathan\inst{3},\break Mohammed Rizwan Amanullah\inst{4}}
 %------------------------------------------------
 % Dataset for the product classification task}
 %------------------------------------------------
-\begin{frame}{Dataset the product classification task}
+\begin{frame}{Dataset for the product classification task}
     \tableofcontents
 
     \textbf{Dataset}
@@ -208,7 +204,7 @@ Sanjay Kanakkot Viswanathan\inst{3},\break Mohammed Rizwan Amanullah\inst{4}}
             - Training set: 560,000 labeled examples.\break
             - Test set: 70,000 examples.\break
          
-         \item Replication of 2\% the size of the original DBpedi dataset.\break 
+         \item Replication of 2\% the size of the original DBpedia dataset.\break 
             - Training set: 11,200 labeled examples.\break 
             - Test set: 1,400 examples.\break
         
@@ -253,28 +249,30 @@ Sanjay Kanakkot Viswanathan\inst{3},\break Mohammed Rizwan Amanullah\inst{4}}
     
     \caption{Summary of the accuracy scores of models on the IMDB sentiment classification task}
     \label{tab:table1}
-    \begin{tabular}{l|r|r|r|} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+    \begin{tabular}{|l|r|r|r|} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
       \hline
       \textbf{Dataset} & \textbf{LM-LSTM} & \textbf{SA-LSTM} & \textbf{LSTM} \\
       \hline
       Original IMDB dataset (original work) & 92.36 & 92.76 & 86.5 \\
-      5 \% of the size of the original IMDB dataset & 57.6 & 56.8 & - \\
+      5 \% of the original IMDB dataset & 57.6 & 56.8 & - \\
       New IMDB dataset & 50 & 50 & 50 \\
       \hline
     \end{tabular}
     
     \caption{Summary of the accuracy scores of models on the product classification task}
     \label{tab:table2}
-    \begin{tabular}{l|r|r|r|r|} 
+    \begin{tabular}{|l|r|r|r|r|} 
       \hline
       \textbf{Dataset} & \textbf{LM-LSTM} & \textbf{SA-LSTM} & \textbf{LSTM} & \textbf{SVM}\\
       \hline
       Original DBpedia dataset (original work) & 98.5 & 97.66 & 86.36 & -\\
-      2 \% of the size of the original DBpedia dataset & 7.1 & 7.1 & 7.1 & ??? \\
+      2 \% of the original DBpedia dataset & 7.1 & 7.1 & 7.1 & - \\
       New Amazon dataset & 9.4 & 9.4 & 9.4 & 4.54\\
       \hline
     \end{tabular}
-  
+    \break
+    \break
+    \footnotesize{Pretraining: LM =  Language Model, and SA = Sequence Autoencoder}
   \end{center}
 \end{table}
 
